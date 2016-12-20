@@ -16,7 +16,7 @@ html(lang='en')
   body
     .page-wrapper
       header.page-header
-        .page-header__logo
+        a(href="#").page-header__logo
         a(href="#").page-header__search-button
         .page-header__top-menu
           ul.top-menu
@@ -31,7 +31,15 @@ html(lang='en')
             li.top-menu__item: a(href="#") contact
       section.home
         .home__slider.slider
-          .slider__item.slider-item.slider-item__item-1
+          .slider__item.slider-item.slider-item__active
+            p.slider-item__text
+              |the ham is&nbsp;
+              span wordress theme
+            h2.slider-item__title we are creative
+            p.slider-item__description just buy and enjoy these awesome features
+            a(href="#").slider-item__explore explore now
+            a(href="#").slider-item__purchase purchase now
+          .slider__item.slider-item
             p.slider-item__text
               |the ham is
               span wordress theme
@@ -39,15 +47,7 @@ html(lang='en')
             p.slider-item__description just buy and enjoy these awesome features
             a(href="#").slider-item__explore explore now
             a(href="#").slider-item__purchase purchase now
-          .slider__item.slider-item.slider-item__item-2
-            p.slider-item__text
-              |the ham is
-              span wordress theme
-            h2.slider-item__title we are creative
-            p.slider-item__description just buy and enjoy these awesome features
-            a(href="#").slider-item__explore explore now
-            a(href="#").slider-item__purchase purchase now
-          .slider__item.slider-item.slider-item__item-3
+          .slider__item.slider-item
             p.slider-item__text
               |the ham is
               span wordress theme
