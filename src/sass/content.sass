@@ -299,3 +299,74 @@
   &__item:nth-child(10)::after,
   &__item:nth-child(12)::after
     background-color: #8a8a8a
+
+.services
+  background-color: #fff
+  padding: 83px 0 99px 0
+  text-align: center
+  &__title
+    text-transform: capitalize
+    font-size: em(36)
+    color: #4e4e4e
+    position: relative
+    display: inline-block
+    &::before,
+    &::after
+      position: absolute
+      content: ""
+      width: 76px
+      height: 1px
+      background-color: #18cfab
+      top: 76px
+      left: 66px
+    &::after
+      top: 79px
+      left: 78px
+  &__nav
+    display: inline-block
+    margin-top: 100px
+  &__list
+    display: inline-block
+    margin-top: 26px
+
+.services-nav
+  background-color: #f8fcfe
+  &__item
+    display: inline-block
+    text-decoration: none
+    text-transform: capitalize
+    color: #717171
+    font-size: em(14)
+    padding: 18px 46px
+    border: 1px solid #ebebeb
+    vertical-align: top
+    transition: color 0.4s
+    &:nth-child(n):not(:last-child)
+      border-right: 0
+    &:hover
+      background-color: #18cfab
+      color: #fff
+  &__item_active
+    background-color: #18cfab
+    color: #fff
+
+.services-list
+  &__item
+    display: none
+  &__item_active
+    display: block
+    .item__logo
+      width: 193px
+      height: 138px
+      background-color: #797979
+      display: inline-block
+      vertical-align: top
+      margin-right: 17px
+    .item__description
+      vertical-align: top
+      font-family: "MontserratLight"
+      font-size: em(14)
+      color: #777
+      text-align: justify
+      display: inline-block
+      width: 930px
