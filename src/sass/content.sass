@@ -398,7 +398,7 @@
 
 .news
   background-color: #fff
-  padding: 83px 353px 99px 325px
+  padding: 83px 353px 72px 325px
   text-align: center
   &__title
     text-transform: capitalize
@@ -474,3 +474,47 @@
         color: #18cfab
       &__date
         background-color: #18cfab
+
+.facts
+  &-item
+    width: 25%
+    padding: 63px 0 54px 0
+    text-align: center
+    display: inline-block
+    font-size: em(20)
+    text-transform: uppercase
+    vertical-align: top
+    &__logo
+      display: inline-block
+      width: 111px
+      height: 111px
+      border-radius: 50%
+      border: 25px solid #1c2a33
+      box-shadow: 0 0 0 2px #18cfab
+    &__logo_logo-1
+      background: #18cfab url(../img/facts-icons.png) no-repeat 37px 34px
+    &__logo_logo-2
+      background: #1c2a33 url(../img/facts-icons.png) no-repeat -444px 34px
+    &__logo_logo-3
+      background: #18cfab url(../img/facts-icons.png) no-repeat -923px 34px
+    &__logo_logo-4
+      background: #1c2a33 url(../img/facts-icons.png) no-repeat -1403px 34px
+    &__count
+      font-size: em(36)
+    &__type
+      font-size: em(18)
+      color: #18cfab
+      font-family: "MontserratLight"
+      text-transform: capitalize
+    &:nth-child(2n-1)
+      background-color: #1c2a33
+      border-top: 7px solid #18cfab
+    &:nth-child(2n)
+      background-color: #18cfab
+      border-top: 7px solid #1c2a33
+      .facts-item__logo
+        border: 25px solid #18cfab
+        box-shadow: 0 0 0 2px #1c2a33
+      .facts-item__type
+        font-size: em(18)
+        color: #1c2a33
