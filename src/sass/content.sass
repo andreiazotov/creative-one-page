@@ -102,3 +102,86 @@
     &:nth-child(2n)
       background-color: #18cfab
       border-top: 7px solid #fff
+
+.features
+  padding: 83px 359px
+  text-align: center
+  &__title
+    text-transform: capitalize
+    font-size: em(36)
+    color: #4e4e4e
+    position: relative
+    display: inline-block
+    margin-right: 20px
+    &::before,
+    &::after
+      position: absolute
+      content: ""
+      width: 76px
+      height: 1px
+      background-color: #18cfab
+      top: 76px
+      left: 195px
+    &::after
+      top: 79px
+      left: 207px
+  &__item
+    display: inline-block
+    width: 325px
+    margin-right: 80px
+    &:nth-child(3n+2)
+      margin-right: 0
+
+.features-item
+  text-align: left
+  margin-top: 75px
+  cursor: pointer
+  &:hover
+    .features-item__title
+      color: #18cfab
+  &__title
+    font-size: em(18)
+    color: #717171
+    margin-left: 47px
+    text-transform: capitalize
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 35px
+      height: 35px
+      left: -50px
+      top: -5px
+  &__description
+    font-size: em(14)
+    font-family: "MontserratLight"
+    color: #777
+    margin-top: 15px
+
+.features-item:nth-child(3)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat 0 0
+.features-item:nth-child(4)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat -400px 0
+.features-item:nth-child(5)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat -811px 0
+.features-item:nth-child(6)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat 0 -185px
+.features-item:nth-child(7)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat -405px -185px
+.features-item:nth-child(8)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat -810px -185px
+.features-item:nth-child(9)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat 0 -372px
+.features-item:nth-child(10)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat -405px -370px
+.features-item:nth-child(11)
+  .features-item__title::after
+    background: url(../img/features-icons.png) no-repeat -810px -370px
