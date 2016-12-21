@@ -72,3 +72,33 @@
         transform: rotate(0deg)
   &-item__active
     display: block
+
+.options
+  &-item
+    width: 25%
+    padding: 88px 0 120px 0
+    text-align: center
+    display: inline-block
+    font-size: em(20)
+    text-transform: uppercase
+    vertical-align: top
+    &__logo
+      background-color: #fff
+      display: inline-block
+      width: 100px
+      height: 100px
+    &__logo_logo-1
+      background: url(../img/option-1.png) no-repeat 50% 50%
+    &__logo_logo-2
+      background: url(../img/option-2.png) no-repeat 50% 50%
+    &__logo_logo-3
+      background: url(../img/option-3.png) no-repeat 50% 50%
+    &__logo_logo-4
+      background: url(../img/option-4.png) no-repeat 50% 50%
+    &:nth-child(2n-1)
+      background-color: #1c2a33
+      color: #18cfab
+      border-top: 7px solid #18cfab
+    &:nth-child(2n)
+      background-color: #18cfab
+      border-top: 7px solid #fff
