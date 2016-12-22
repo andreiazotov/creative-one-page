@@ -683,3 +683,92 @@
       width: 56px
       height: 56px
       margin-bottom: 10px
+
+.team
+  background-color: #fff
+  padding: 83px 356px 98px 356px
+  text-align: center
+  &__title
+    text-transform: capitalize
+    font-size: em(36)
+    color: #4e4e4e
+    position: relative
+    display: inline-block
+    margin-bottom: 96px
+    &::before,
+    &::after
+      position: absolute
+      content: ""
+      width: 76px
+      height: 1px
+      background-color: #18cfab
+      top: 76px
+      left: 90px
+    &::after
+      top: 79px
+      left: 102px
+  &__item
+    display: inline-block
+    &:not(:last-child)
+      margin-right: 28px
+  .item
+    cursor: pointer
+    width: 264px
+    background-color: #2e4a5b
+    transition: 0.4s
+    &__photo
+      width: 100%
+      height: 229px
+      background-color: #dae9e6
+      position: relative
+    &__name
+      text-align: left
+      margin-top: 13px
+      margin-left: 27px
+    &__position
+      font-size: em(13)
+      font-family: "MontserratLight"
+      color: #18cfab
+      text-align: left
+      margin-left: 27px
+      margin-top: 3px
+      margin-bottom: 16px
+    &__socials-links
+      border-top: 1px solid #fff
+      height: 65px
+      .social-links__item
+        display: inline-block
+        width: 65px
+        height: 65px
+        background: url(../img/social-links.png) no-repeat 0 0
+        &:not(:last-child)
+          border-right: 1px solid #fff
+      .social-links__item_fb
+        background-position: 27px 50%
+      .social-links__item_tw
+        background-position: -38px 50%
+      .social-links__item_sk
+        background-position: -105px 50%
+      .social-links__item_vimeo
+        background-position: -171px 50%
+
+  .item:hover
+    background-color: #18cfab
+    .item__photo
+      background-color: rgba(#2e4a5b, 0.5)
+      &::after
+        position: absolute
+        content: "+"
+        left: 97px
+        top: 83px
+        color: #18cfab
+        font-size: em(72)
+        padding: 0 16px
+        line-height: 69px
+        background-color: #fff
+        opacity: 0.9
+        border-radius: 50%
+        border: 5px solid rgba(#2e4a5b, 0.5)
+        box-shadow: 0 0 0 2px #18cfab
+    .item__position
+      color: #2e4a5b
