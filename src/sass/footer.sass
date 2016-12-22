@@ -1,1 +1,122 @@
 /* from footer.sass */
+.page-footer
+  padding: 113px 349px 110px 349px
+  background-color: #1c2b33
+  &__contacts
+    display: inline-block
+    margin-right: 57px
+    vertical-align: top
+  .contacts
+    width: 238px
+    &__title
+      font-size: em(40)
+      span
+        font-family: "MontserratBold"
+        color: #18cfab
+    &__description
+      font-family: "MontserratLight"
+    &__description,
+    &__address,
+    &__phone,
+    &__fax,
+    &__email
+      font-size: em(14)
+      color: #b2b2b2
+      span
+        font-family: "MontserratLight"
+    &__address
+      margin: 65px 0 30px 0
+      span
+        display: block
+  &__blog
+    display: inline-block
+    margin-right: 57px
+    vertical-align: top
+  .blog
+    width: 338px
+    &__title
+      font-size: em(18)
+      font-family: "MontserratBold"
+      text-transform: uppercase
+      margin-top: 10px
+    &__item.item
+      margin-top: 25px
+      &:not(:last-child)
+        border-bottom: 1px solid #294453
+      .item__preview
+        font-size: 0
+        width: 77px
+        height: 66px
+        background-color: #959595
+        display: inline-block
+        vertical-align: top
+        margin-top: 6px
+      .item__post
+        display: inline-block
+        margin-left: 13px
+        vertical-align: top
+        width: 248px
+        .post__title
+          font-family: "MontserratBold"
+          text-transform: uppercase
+        .post__undertitle
+          font-size: em(14)
+          color: #b2b2b2
+          font-family: "MontserratLight"
+          margin: 10px 0
+        .post__date
+          font-size: em(14)
+          font-family: "MontserratLight"
+          color: #f1f1f1
+          margin-bottom: 15px
+  &__tags
+    display: inline-block
+    margin-right: 52px
+    vertical-align: top
+  .tags
+    width: 247px
+    border-bottom: 1px solid #294453
+    padding-bottom: 36px
+    &__title
+      font-size: em(18)
+      font-family: "MontserratBold"
+      text-transform: uppercase
+      margin-top: 10px
+    .tags-list
+      margin-top: 30px
+      &__item
+        cursor: pointer
+        display: inline-block
+        padding: 10px 14px
+        font-size: em(14)
+        font-family: "MontserratLight"
+        border: 1px solid #18cfab
+        margin: 0 8px 8px 0
+        &:hover
+          background-color: #18cfab
+  &__feed
+    display: inline-block
+    width: 166px
+    vertical-align: top
+  .feed
+    &__title
+      font-size: em(18)
+      font-family: "MontserratBold"
+      text-transform: uppercase
+      margin-top: 10px
+    &__item
+      font-size: 0
+      width: 75px
+      height: 74px
+      background-color: #959595
+      display: inline-block
+      &:nth-child(2n)
+        margin-right: 16px
+
+.copyrights
+  text-align: center
+  padding: 40px 0
+  font-size: em(14)
+  font-family: "MontserratLight"
+  background-color: #22353f
+  color: #aeaeae
