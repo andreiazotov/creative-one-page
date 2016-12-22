@@ -521,7 +521,7 @@
 
 .pricing
   background-color: #fff
-  padding: 83px 353px 72px 325px
+  padding: 83px 0 98px 0
   text-align: center
   &__title
     margin-bottom: 95px
@@ -606,3 +606,80 @@
     .item__buy-button,
     .item__price
       background-color: #18cfab
+
+.feedback
+  background-color: rgba(#2e404c, 1)
+  padding: 83px 395px 98px 395px
+  text-align: center
+  &__title
+    text-transform: capitalize
+    font-size: em(36)
+    color: #fff
+    position: relative
+    display: inline-block
+    &::before,
+    &::after
+      position: absolute
+      content: ""
+      width: 76px
+      height: 1px
+      background-color: #18cfab
+      top: 76px
+      left: 245px
+    &::after
+      top: 79px
+      left: 257px
+  &__slider
+    position: relative
+    margin-top: 165px
+
+.feedback-slider
+  &__item
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      width: 44px
+      height: 33px
+      background: url(../img/quotes.png) no-repeat 0 0
+      left: 48%
+      top: -67px
+    .item__comment
+      font-family: "MontserratLight"
+      color: #bbb
+    .item__author
+      margin-top: 30px
+      text-transform: uppercase
+      color: #18cfab
+    .item__author-position
+      font-size: em(13)
+      color: #bbb
+    .item__author-photo
+      display: inline-block
+      width: 139px
+      height: 139px
+      border-radius: 50%
+      background-color: #878787
+      border: 3px solid #18cfab
+      box-shadow: 0 0 0 10px #2a5f60
+      margin-top: 35px
+  .feedback-slider-nav
+    margin-top: 70px
+    display: inline-block
+    &__item
+      cursor: pointer
+      display: inline-block
+      vertical-align: bottom
+      width: 58px
+      height: 58px
+      background-color: #878787
+      box-shadow: 0 0 0 5px #2a5f60
+      border-radius: 50%
+      &:not(:last-child)
+        margin-right: 35px
+    &__item_active
+      vertical-align: top
+      border: 2px solid #18cfab
+      width: 56px
+      height: 56px
+      margin-bottom: 10px
