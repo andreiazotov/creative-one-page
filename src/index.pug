@@ -519,25 +519,33 @@ html(lang='en')
         h3.buy__title theham is not only wordpress theme
         p.buy__description it's also clean and creative design
         .buy__image
-        .buy__features.but-features
+        .buy__features.buy-features
           .buy-features__item Clean Layout Design
+          .divider
           .buy-features__item Many Style Portfolio Design
+          .divider
           .buy-features__item Beautiful Blog Page
+          .divider
           .buy-features__item Mega PSD Pack
+          .divider
           .buy-features__item User Friendly Design
+          .divider
           .buy-features__item Full Shortcodes
+          .divider
           .buy-features__item Fully Editable PSD
-          a(href="#").but-features__button purchase now
+          .divider
+          a(href="#").buy-features__button purchase now
       section.contact
         .contact__map
         .contact__feedback-form
           form#feedback-form.feedback-form
             h3.feedback-form__title keep in touch
+            .divider
             label(for="name").feedback-form__label
-            input(type="text" name="name" placeholder="name").feedback-form_field
+            input(type="text" name="name" placeholder="name").feedback-form__field
             label(for="email").feedback-form__label
-            input(type="text" name="email" placeholder="email").feedback-form_field
-            textarea(name="name" placeholder="name").feedback-form_field
+            input(type="text" name="email" placeholder="email").feedback-form__field
+            textarea(name="name" placeholder="message").feedback-form__field
             label(for="submit").feedback-form__label
             input(type="submit" value="send request").feedback-form__submit
       footer.page-footer
