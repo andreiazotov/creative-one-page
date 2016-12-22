@@ -518,3 +518,91 @@
       .facts-item__type
         font-size: em(18)
         color: #1c2a33
+
+.pricing
+  background-color: #fff
+  padding: 83px 353px 72px 325px
+  text-align: center
+  &__title
+    margin-bottom: 95px
+    text-transform: capitalize
+    font-size: em(36)
+    color: #4e4e4e
+    position: relative
+    display: inline-block
+    &::before,
+    &::after
+      position: absolute
+      content: ""
+      width: 76px
+      height: 1px
+      background-color: #18cfab
+      top: 76px
+      left: 110px
+    &::after
+      top: 79px
+      left: 122px
+  &__item
+    display: inline-block
+    &:not(:first-child)
+      margin-left: -2px
+  .item
+    box-sizing: border-box
+    width: 268px
+    border: 1px solid #e1e1e1
+    border-radius: 5px
+    background-color: #f8fcfe
+    &__type
+      font-size: em(24)
+      font-family: "MontserratBold"
+      padding: 25px 0 20px 0
+      color: #717171
+      text-transform: uppercase
+    &__price
+      padding: 30px 0
+      font-size: em(39)
+      font-family: "MontserratBold"
+      color: #fff
+      background-color: #2e4a5b
+      margin-bottom: 5px
+      border: 1px solid #ebebeb
+      span
+        font-family: "MontserratLight"
+        font-size: em(8)
+    &__feature
+      padding: 20px 0 15px 0
+      border: 1px solid #e1e1e1
+      font-size: em(14)
+      color: #777
+      text-transform: capitalize
+    &__buy-button
+      text-decoration: none
+      color: #fff
+      font-size: em(14)
+      font-family: "MontserratBold"
+      text-transform: uppercase
+      padding: 13px 50px
+      background-color: #2e4a5b
+      border-radius: 3px
+      margin: 24px 0 28px 0
+      display: inline-block
+  .item_special
+    box-shadow: 0 0 9px #c7c7c7
+    position: relative
+    .item__type
+      color: #18cfab
+      position: relative
+      overflow: hidden
+      &::after
+        position: absolute
+        content: "OFFER"
+        padding: 2px 20px
+        background-color: #18cfab
+        color: #fff
+        font-size: em(9)
+        right: -22px
+        top: 9px
+        transform: rotate(45deg)
+    .item__buy-button,
+    .item__price
+      background-color: #18cfab
