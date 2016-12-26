@@ -186,7 +186,130 @@
     background: url(../img/features-icons.png) no-repeat -810px -370px
 
 .about
-  background-color: #ccc
+  background-color: rgba(#1c2a33, 1)
+  &__image
+    display: inline-block
+    width: 900px
+    height: 500px
+    background-color: #b3b3b3
+    vertical-align: bottom
+    text-align: center
+    cursor: pointer
+  &__content
+    display: inline-block
+    margin: 100px 0 100px 75px
+
+.about-content
+  &__title
+    text-transform: capitalize
+    font-size: em(36)
+    color: #fff
+    position: relative
+    display: inline-block
+    &::before,
+    &::after
+      position: absolute
+      content: ""
+      width: 76px
+      height: 1px
+      background-color: #18cfab
+      top: 76px
+      left: 127px
+    &::after
+      top: 79px
+      left: 139px
+  &__history,
+  &__biography,
+  &__skills
+    display: none
+  .active
+    display: block
+  .skills
+    color: #fff
+    font-size: em(13)
+    text-transform: uppercase
+    &__item
+      border: 1px solid #18cfab
+      border-radius: 4px
+      cursor: pointer
+      width: 536px
+      height: 37px
+      p
+        padding: 9px 0 9px 18px
+        display: block
+        border-radius: 4px
+        width: 70%
+        height: 21px
+        margin-top: -1px
+        margin-left: -1px
+      &:not(:last-child)
+        margin-bottom: 14px
+    &__item_item-1
+      p
+        background-color: #9c5da5
+        width: 72%
+    &__item_item-2
+      p
+        background-color: #11b0de
+        width: 82%
+    &__item_item-3
+      p
+        background-color: #d67f7f
+        width: 65%
+    &__item_item-4
+      p
+        background-color: #20bc9d
+        width: 88%
+    &__item_item-5
+      p
+        background-color: #bb8a36
+        width: 82%
+  .biography
+    width: 553px
+    font-size: em(14)
+    color: #bebebe
+    font-family: "MontserratLight"
+    &__text:first-child
+      margin-bottom: 30px
+  .history
+    width: 554px
+    font-size: em(14)
+    color: #bebebe
+    font-family: "MontserratLight"
+    &__text:first-child + p
+      margin-bottom: 40px
+    &__achievement
+      display: inline-block
+      padding-left: 38px
+      margin-top: 10px
+      position: relative
+      &:nth-child(2n)
+        margin-left: 60px
+      &::before
+        position: absolute
+        content: ""
+        width: 23px
+        height: 23px
+        background: url(../img/achive-icon.png) no-repeat 0 0
+        top: 0
+        left: 0
+  &__nav.nav
+    margin-top: 95px
+    margin-bottom: 60px
+    .nav__item
+      display: inline-block
+      font-family: "MontserratBold"
+      text-transform: uppercase
+      color: whitesmoke
+      cursor: pointer
+      border-top: 2px solid transparent
+      transition: 0.4s
+      &:not(:last-child)
+        margin-right: 22px
+    .nav__item.active,
+    .nav__item:hover
+      color: #18cfab
+      border-top: 2px solid #18cfab
 
 .work
   background-color: #f8fcfe
@@ -838,6 +961,7 @@
     height: 549px
     background-color: #9e9e9e
     vertical-align: top
+    text-align: center
   &__feedback-form
     display: inline-block
     vertical-align: top
