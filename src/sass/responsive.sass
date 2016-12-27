@@ -2,24 +2,27 @@
 @media screen and (max-width: 1690px)
   .page-header
     padding: 25px 200px
+  .news
+    padding: 83px 200px 72px
 
 @media screen and (max-width: 1539px)
   .contact
     &__map
       width: 800px
   .feedback-form
+    text-align: center
     &__field
       width: 437px
     &__submit
-      padding: 19px 166px 16px
+      padding: 19px 150px 16px
   .about
     &__image
       height: 400px
       width: 700px
-  .news
-    padding: 83px 50px 72px
   .features
     padding: 83px 0
+  .news
+    padding: 83px 70px 72px
 
 @media screen and (max-width: 1330px)
   .page-header
@@ -35,7 +38,7 @@
       height: 414px
       width: 969px
     &__features
-      margin-top: -25px
+      margin-top: -20px
   .contact
     &__map
       width: 650px
@@ -92,9 +95,12 @@
     .item
       width: 215px
   .team
+    overflow: hidden
     &__item
-      &:last-child
-        margin-right: 28px
+      margin-left: 150px
+      &:nth-child(2n)
+        margin-left: 0
+        margin-right: 150px
   .buy
     &__image
       height: 214px
@@ -103,8 +109,6 @@
   .contact
     &__map
       width: 550px
-    &__field
-      width: 400px
   .page-footer
     &__tags,
     &__feed
@@ -165,6 +169,33 @@
     &__item:nth-child(10)::after,
     &__item:nth-child(12)::after
       background-color: #8a8a8a
+  .services-nav
+    &__item
+      padding: 18px 10px
+  .services-list
+    &__item_active
+      .item__logo
+        display: none
+      .item__description
+        width: 90%
+  .team
+    overflow: hidden
+    &__item
+      margin-left: 50px
+      &:nth-child(2n)
+        margin-left: 0
+        margin-right: 50px
+  .buy
+    text-align: center
+    &__image
+      display: none
+    &__features
+      margin-left: 45px
+      display: inline-block
+      .buy-features__item
+        font-size: em(32)
+        &::before
+          top: 10px
 
 @media screen and (max-width: 800px)
   .features
@@ -189,6 +220,14 @@
   .work-nav
     &__item
       padding: 18px 10px
+  .services-nav
+    width: 50%
+    &__item
+      display: block
+      padding: 18px 0
+      width: 100%
+      &:nth-child(n):not(:last-child)
+        border-right: 1px solid #ebebeb
   .news-list
     &__item
       &:nth-child(2n),
@@ -206,8 +245,176 @@
       display: none
     &__contacts
       margin-right: 0
+  .team
+    overflow: hidden
+    &__item
+      margin-left: 15px
+      &:nth-child(2n)
+        margin-left: 0
+        margin-right: 15px
+
+@media screen and (max-width: 620px)
+  .feedback
+    &__title
+      font-size: em(32)
+      &::after,
+      &::before
+        display: none
+    &__slider
+      margin-top: 120px
+      width: 90%
+  .team
+    overflow: hidden
+    &__item
+      display: block
+      margin-top: 20px
+      &:nth-child(n)
+        margin-left: auto
+        margin-right: auto
 
 @media screen and (max-width: 558px)
   .news-list
     &__item
       margin-right: 0
+  .options
+    &__item
+      display: block
+      width: 100%
+  .facts
+    &__item
+      display: block
+      width: 100%
+
+@media screen and (max-width: 500px)
+  .page-header
+    padding-left: 0
+    padding-right: 0
+    &__logo
+      float: none
+      display: block
+      margin: 0 auto
+    &__search-button
+      display: none
+  .slider
+    &__item
+      padding: 180px 0 245px 0
+    &-item
+      &__text
+        font-size: em(28)
+      &__title
+        font-size: em(60)
+      &__explore,
+      &__purchase
+        display: block
+        width: 60%
+        margin: 20px auto 0 auto
+      &__description
+        font-size: em(30)
+  .features
+    &__title
+      font-size: em(32)
+      &::after,
+      &::before
+        display: none
+  .about-content
+    width: 90%
+    &__title
+      font-size: em(32)
+      &::after,
+      &::before
+        display: none
+    &__nav.nav
+      .nav__item
+        display: block
+        margin-top: 20px
+        &:not(:last-child)
+          margin-right: 0
+    .skills
+      width: 100%
+      &__item
+        width: 100%
+  .work
+    &__title
+      font-size: em(32)
+      &::after,
+      &::before
+        display: none
+    &__list
+      width: 100%
+      height: 100%
+  .work-nav
+    margin-top: 20px
+    width: 60%
+    &__item
+      display: block
+      &:nth-child(n):not(:last-child)
+        border-right: 1px solid #ebebeb
+  .work-list
+    &__item
+      display: block
+      width: 100%
+      &::after
+        height: 102%
+  .services
+    &__title
+      font-size: em(32)
+      &::after,
+      &::before
+        display: none
+  .news
+    &__title
+      font-size: em(32)
+      &::after,
+      &::before
+        display: none
+  .pricing
+    &__title
+      font-size: em(32)
+      &::after,
+      &::before
+        display: none
+    &__item
+      display: block
+    .item
+      width: 90%
+      margin: 0 auto 20px auto
+  .feedback-slider
+    .feedback-slider-nav__item
+      width: 40px
+      height: 40px
+  .buy
+    &__title
+      font-size: em(40)
+    &__description
+      font-size: em(32)
+    &__features
+      margin-left: 55px
+      display: inline-block
+      .buy-features__item
+        font-size: em(26)
+        &::before
+          top: 10px
+  .contact
+    &__feedback-form
+      width: 100%
+  .feedback-form
+    &__title
+      font-size: em(32)
+      margin-bottom: 60px
+      &::after,
+      &::before
+        display: none
+    &__field
+      width: 90%
+      margin-left: auto
+      margin-right: auto
+    &__submit
+      padding-left: 40px
+      padding-right: 40px
+  .team
+    &__title
+      font-size: em(32)
+      margin-bottom: 60px
+      &::after,
+      &::before
+        display: none
