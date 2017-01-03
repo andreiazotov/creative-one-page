@@ -39,6 +39,9 @@
       display: inline-block
       text-decoration: none
       color: #fff
+      transition: 0.4s
+      &:hover
+        opacity: 0.8
     &__purchase
       background-color: #00cbf6
       margin-left: 30px
@@ -75,6 +78,7 @@
 
 .options
   &-item
+    cursor: pointer
     width: 25%
     padding: 88px 0 120px 0
     text-align: center
@@ -87,6 +91,9 @@
       display: inline-block
       width: 100px
       height: 100px
+      transition: 0.5s
+      &:hover
+        transform: rotate(360deg)
     &__logo_logo-1
       background: url(../img/option-1.png) no-repeat 50% 50%
     &__logo_logo-2
@@ -135,7 +142,9 @@
   text-align: left
   margin-top: 75px
   cursor: pointer
+  transition: 0.5s
   &:hover
+    box-shadow: 5px 5px 4px 0 #717171
     .features-item__title
       color: #18cfab
   &__title
@@ -144,6 +153,7 @@
     margin-left: 47px
     text-transform: capitalize
     position: relative
+    transition: 0.5s
     &::after
       position: absolute
       content: ""
@@ -353,6 +363,9 @@
     background-color: #18cfab
     margin-top: 69px
     font-size: em(14)
+    transition: 0.5s
+    &:hover
+      padding: 15px 70px
 
 .work-nav
   background-color: #fff
@@ -518,6 +531,9 @@
     display: inline-block
     text-decoration: none
     color: #fff
+    transition: 0.5s
+    &:hover
+      padding: 20px 50px
 
 .news
   background-color: #fff
@@ -568,6 +584,7 @@
         top: 0
         width: 30px
         text-align: center
+        transition: 0.4s
       &__preview
         width: 263px
         height: 227px
@@ -578,6 +595,7 @@
         text-transform: capitalize
         margin-left: 20px
         margin-bottom: 5px
+        transition: 0.4s
       &__posted-by,
       &__comments
         display: inline-block
@@ -600,6 +618,7 @@
 
 .facts
   &-item
+    cursor: pointer
     width: 25%
     padding: 63px 0 54px 0
     text-align: center
@@ -614,6 +633,9 @@
       border-radius: 50%
       border: 25px solid #1c2a33
       box-shadow: 0 0 0 2px #18cfab
+      transition: 0.5s
+      &:hover
+        transform: rotate(360deg)
     &__logo_logo-1
       background: #18cfab url(../img/facts-icons.png) no-repeat 37px 34px
     &__logo_logo-2
@@ -670,11 +692,15 @@
     &:not(:first-child)
       margin-left: -2px
   .item
+    cursor: pointer
     box-sizing: border-box
     width: 268px
     border: 1px solid #e1e1e1
     border-radius: 5px
     background-color: #f8fcfe
+    transition: 0.4s
+    &:hover
+      transform: rotate(-2deg)
     &__type
       font-size: em(24)
       font-family: "MontserratBold"
@@ -954,6 +980,9 @@
     text-decoration: none
     color: #fff
     margin-left: -44px
+    transition: 0.5s
+    &:hover
+      padding: 20px 50px
 
 .contact
   padding: 130px 0
@@ -1016,3 +1045,4 @@
     padding: 19px 216px 16px 216px
     font-size: em(16)
     max-width: 556px
+    cursor: pointer
